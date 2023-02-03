@@ -8,7 +8,7 @@ Clone the repository
 
 ```bash
 
-git@github.com:LuizaAlanis/user-validation.git
+git@github.com:LuizaAlanis/username-validation.git
 
 ```
 
