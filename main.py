@@ -1,22 +1,22 @@
-def lenghtIsValid(strParam):
-  lenght = len(strParam)
+def is_string_length_valid(string):
+    length = len(string)
+    least = 4
+    most = 25
 
-  least = 4
-  most = 25
-
-  if least <= lenght <= most:
-    return True
+    if least <= length <= most:
+        return True
 
 
-def isValidCharacters(strParam):
-  if strParam.isalnum() or "_" in strParam:
-    return True
+def is_characters_valid(string):
+    if string.isalnum() or "_" in string:
+        return True
 
-def CodelandUsernameValidation(strParam):
-  if lenghtIsValid(strParam) and strParam[0].isalpha() and isValidCharacters(strParam) and strParam[len(strParam) - 1] != "_":
-    return True
-  else:
-    return False
 
-# keep this function call here 
-print(CodelandUsernameValidation(input()))
+def username_validation(string):
+    if is_string_length_valid(string) and string[0].isalpha() and is_characters_valid(string) and string[-1] != "_":
+        return True
+    else:
+        return False
+
+
+print(username_validation(input()))
